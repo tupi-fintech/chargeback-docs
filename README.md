@@ -1,126 +1,132 @@
-# 📋 Documentação do Sistema de Chargeback
+# 📋 Chargeback System Documentation
 
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)]()
 [![Documentation](https://img.shields.io/badge/docs-complete-success)]()
 
-> 📚 Documentação completa das APIs e notificações do sistema de gerenciamento de chargebacks
+> 📚 Complete documentation for APIs and notifications of the chargeback management system
 
-## 🎯 Visão Geral
+## 🌐 Language Versions
 
-Este repositório contém a documentação técnica completa do sistema de chargeback, incluindo especificações de APIs, formatos de notificações e fluxos de dados para integração com sistemas externos.
+- 🇺🇸 **English** (current)
+- 🇪🇸 [Español](./README.es.md)
+- 🇧🇷 [Português](./README.pt-br.md)
 
-## 📁 Estrutura da Documentação
+## 🎯 Overview
 
-### 🔄 1. Enrichment (Enriquecimento de Dados)
+This repository contains the complete technical documentation of the chargeback system, including API specifications, notification formats, and data flows for integration with external systems.
 
-Documentação do fluxo de enriquecimento de dados entre sistema e cliente:
+## 📁 Documentation Structure
 
-| Arquivo | Descrição | Fluxo de Dados |
-|---------|-----------|----------------|
-| [`1.TRANSACTION.md`](./1.Enrichment/1.TRANSACTION.md) | 💳 **Dados de Transação**<br/>📤 `TransactionEvent`: Enviado para o cliente<br/>📥 `TransactionResponse`: Recebido via API | **Event** → Cliente<br/>**Response** ← Cliente |
-| [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.md) | 🏪 **Dados do Estabelecimento Comercial**<br/>📤 `MerchantEvent`: Enviado para o cliente<br/>📥 `MerchantResponse`: Recebido via API | **Event** → Cliente<br/>**Response** ← Cliente |
+### 🔄 1. Enrichment (Data Enrichment)
 
-### 📢 2. Notifications (Notificações de Sistema)
+Documentation of data enrichment flow between system and client:
 
-Documentação das notificações de status e ciclo de vida dos chargebacks:
+| File | Description | Data Flow |
+|------|-------------|-----------|
+| [`1.TRANSACTION.md`](./1.Enrichment/1.TRANSACTION.md) | 💳 **Transaction Data**<br/>📤 `TransactionEvent`: Sent to client<br/>📥 `TransactionResponse`: Received via API | **Event** → Client<br/>**Response** ← Client |
+| [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.md) | 🏪 **Merchant Data**<br/>📤 `MerchantEvent`: Sent to client<br/>📥 `MerchantResponse`: Received via API | **Event** → Client<br/>**Response** ← Client |
 
-| Arquivo | Descrição | Tipo de Evento |
-|---------|-----------|----------------|
-| [`3.STATUS.md`](./2.Notifications/3.STATUS.md) | 📊 **Notificações de Status** - Atualizações de status do processo de chargeback | `status` |
-| [`4.CYCLE.md`](./2.Notifications/4.CYCLE.md) | 🔄 **Notificações de Ciclo** - Mudanças de ciclo (chargeback, pré-arbitragem, arbitragem) | `cycle` |
+### 📢 2. Notifications (System Notifications)
 
-## 🚀 Como Usar Esta Documentação
+Documentation of status and lifecycle notifications for chargebacks:
 
-1. **Para Desenvolvedores**: 
-   - Consulte os arquivos de **Events** para implementar recebimento de notificações
-   - Consulte os arquivos de **Responses** para implementar APIs de retorno de dados
-   - Use os formatos especificados para garantir integração correta
+| File | Description | Event Type |
+|------|-------------|------------|
+| [`3.STATUS.md`](./2.Notifications/3.STATUS.md) | 📊 **Status Notifications** - Chargeback process status updates | `status` |
+| [`4.CYCLE.md`](./2.Notifications/4.CYCLE.md) | 🔄 **Cycle Notifications** - Cycle changes (chargeback, pre-arbitration, arbitration) | `cycle` |
 
-2. **Para Analistas**: 
-   - Use a documentação para compreender os fluxos bidirecionais de dados
-   - Entenda quando o sistema solicita dados (Events) vs quando recebe dados (Responses)
+## 🚀 How to Use This Documentation
 
-3. **Para Suporte**: 
-   - Utilize como referência para troubleshooting de integrações
-   - Identifique se problemas estão no envio de Events ou recebimento de Responses
+1. **For Developers**: 
+   - Consult **Events** files to implement notification reception
+   - Consult **Responses** files to implement data return APIs
+   - Use specified formats to ensure correct integration
 
-## 📋 Tipos de Comunicação Disponíveis
+2. **For Analysts**: 
+   - Use documentation to understand bidirectional data flows
+   - Understand when the system requests data (Events) vs when it receives data (Responses)
 
-### 🔄 Enriquecimento de Dados (Events ↔ Responses)
+3. **For Support**: 
+   - Use as reference for integration troubleshooting
+   - Identify if issues are in Event sending or Response receiving
 
-| Tipo | Enviamos (Event) | Recebemos (Response) | Documentação |
-|------|------------------|---------------------|--------------|
-| `transaction` | Solicita dados de transação | Dados completos da transação | [TRANSACTION.md](./1.Enrichment/1.TRANSACTION.md) |
-| `merchant` | Solicita dados do EC | Dados completos do estabelecimento | [MERCHANT.md](./1.Enrichment/2.MERCHANT.md) |
+## 📋 Available Communication Types
 
-### 📢 Notificações Unidirecionais (Events)
+### 🔄 Data Enrichment (Events ↔ Responses)
 
-| Tipo | Enviamos (Event) | Propósito | Documentação |
-|------|------------------|-----------|--------------|
-| `status` | Atualização de status | Informar mudanças de status | [STATUS.md](./2.Notifications/3.STATUS.md) |
-| `cycle` | Mudança de ciclo | Informar alterações de ciclo | [CYCLE.md](./2.Notifications/4.CYCLE.md) |
+| Type | We Send (Event) | We Receive (Response) | Documentation |
+|------|-----------------|----------------------|---------------|
+| `transaction` | Request transaction data | Complete transaction data | [TRANSACTION.md](./1.Enrichment/1.TRANSACTION.md) |
+| `merchant` | Request merchant data | Complete merchant data | [MERCHANT.md](./1.Enrichment/2.MERCHANT.md) |
 
-## 🔧 Integração
+### 📢 Unidirectional Notifications (Events)
 
-### 📤📥 Fluxo de Comunicação
+| Type | We Send (Event) | Purpose | Documentation |
+|------|-----------------|---------|---------------|
+| `status` | Status update | Inform status changes | [STATUS.md](./2.Notifications/3.STATUS.md) |
+| `cycle` | Cycle change | Inform cycle alterations | [CYCLE.md](./2.Notifications/4.CYCLE.md) |
 
-O sistema utiliza dois tipos de comunicação:
+## 🔧 Integration
 
-#### 📤 **Events (Eventos)** - Enviados pelo Sistema
-Notificações que **enviamos para o cliente** quando precisamos de dados adicionais:
-- Contêm identificadores mínimos necessários
-- Solicitam enriquecimento de dados específicos
-- São enviados via webhook/notificação
+### 📤📥 Communication Flow
 
-#### 📥 **Responses (Respostas)** - Recebidas via API  
-Dados completos que **recebemos do cliente** via API para atualizar nosso sistema:
-- Contêm todos os dados detalhados solicitados
-- São enviados pelo cliente através de chamadas API
-- Atualizam as informações no nosso sistema
+The system uses two types of communication:
 
-### Estrutura Base dos Eventos
+#### 📤 **Events** - Sent by System
+Notifications that **we send to the client** when we need additional data:
+- Contain minimal necessary identifiers
+- Request specific data enrichment
+- Are sent via webhook/notification
 
-Todos os eventos enviados seguem uma estrutura base comum:
+#### 📥 **Responses** - Received via API  
+Complete data that **we receive from the client** via API to update our system:
+- Contain all detailed requested data
+- Are sent by the client through API calls
+- Update information in our system
+
+### Base Event Structure
+
+All sent events follow a common base structure:
 
 ```typescript
 type BaseEvent = {
     event: string;
     payload: {
         contractDisputeId: string;
-        // ... identificadores específicos por tipo de evento
+        // ... specific identifiers per event type
     };
 }
 ```
 
-### Estrutura Base das Respostas
+### Base Response Structure
 
-As respostas recebidas via API contêm dados completos:
+Responses received via API contain complete data:
 
 ```typescript
 type BaseResponse = {
-    // Dados completos e detalhados do objeto solicitado
-    // Estrutura varia conforme o tipo de dados
+    // Complete and detailed data of the requested object
+    // Structure varies according to data type
 }
 ```
 
-### Identificadores Principais
+### Main Identifiers
 
-- **`contractDisputeId`**: Identificador único do contrato de disputa
-- **`transactionIdentifier`**: Identificador da transação
-- **`acquirerReferenceNumber`**: Número de referência da adquirente
-- **`helpdeskCaseIdentifier`**: Identificador do caso no helpdesk
+- **`contractDisputeId`**: Unique identifier of the dispute contract
+- **`transactionIdentifier`**: Transaction identifier
+- **`acquirerReferenceNumber`**: Acquirer reference number
+- **`helpdeskCaseIdentifier`**: Helpdesk case identifier
 
-## 📞 Suporte
+## 📞 Support
 
-Para dúvidas ou sugestões sobre esta documentação, entre em contato com a equipe de desenvolvimento.
+For questions or suggestions about this documentation, contact the development team.
 
 ---
 
 <div align="center">
 
-**📄 Documentação mantida pela equipe Tupi Fintech**
+**📄 Documentation maintained by Tupi Fintech team**
 
-*Última atualização: Agosto 2025*
+*Last update: August 2025*
 
 </div>
