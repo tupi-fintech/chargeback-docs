@@ -170,16 +170,19 @@
   },
   "active": "23f01ac2bbf77628",
   "lastOpenFiles": [
-    "Dados do Canal Indireto.md",
-    "Dados do Ciclo.md",
-    "Dados da Transação.md",
-    "Dados da Liquidação.md",
-    "Atualizações de Status.md",
+    "2.Notifications/4.CYCLE.md",
     "README.md",
-    "Dados do EC.md",
+    "2.Notifications/3.STATUS.md",
+    "2.Notifications",
+    "1.Enrichment/2.MERCHANT.md",
+    "1.Enrichment/1.TRANSACTION.md",
+    "1.Enrichment",
+    "TRANSACTION.md",
+    "3.PARTNER.md",
+    "2.INSTALLMENT_SETTLEMENT.md",
+    "Dados.md",
     "dados do EC.md",
     "notificação de ciclo.md",
-    "crie um link.md",
-    "Sem título"
+    "crie um link.md"
   ]
 }
