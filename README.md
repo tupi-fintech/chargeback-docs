@@ -1,0 +1,6 @@
+[[Dados da Transação]]
+[[Dados da Liquidação]]
+[[Dados do Canal Indireto]]
+[[Dados do EC]]
+[[Dados do Ciclo]]
+[[Atualizações de Status]]
