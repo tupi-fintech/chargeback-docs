@@ -16,9 +16,13 @@
 
 Este repositorio contiene la documentación técnica completa del sistema de contracargo, incluyendo especificaciones de APIs, formatos de notificaciones y flujos de datos para integración con sistemas externos.
 
+![File Ingestion](./images/file-ingestion.png)
+
 ## 📁 Estructura de la Documentación
 
 ### 🔄 1. Enrichment (Enriquecimiento de Datos)
+
+![Data Enrichment](./images/data-enrichment.png)
 
 Documentación del flujo de enriquecimiento de datos entre sistema y cliente:
 
@@ -28,6 +32,8 @@ Documentación del flujo de enriquecimiento de datos entre sistema y cliente:
 | [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.md) | 🏪 **Datos del Comercio**<br/>📤 `MerchantEvent`: Enviado al cliente<br/>📥 `MerchantResponse`: Recibido vía API | **Event** → Cliente<br/>**Response** ← Cliente |
 
 ### 📢 2. Notifications (Notificaciones del Sistema)
+
+![System Notifications](./images/system-notifications.png)
 
 Documentación de las notificaciones de estado y ciclo de vida de los contracargos:
 
@@ -127,6 +133,6 @@ Para preguntas o sugerencias sobre esta documentación, contacte al equipo de de
 
 **📄 Documentación mantenida por el equipo Tupi Fintech**
 
-*Última actualización: Agosto 2025*
+*Última actualización: Septiembre 2025*
 
 </div>

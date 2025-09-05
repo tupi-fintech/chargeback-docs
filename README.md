@@ -16,9 +16,13 @@
 
 This repository contains the complete technical documentation of the chargeback system, including API specifications, notification formats, and data flows for integration with external systems.
 
+![File Ingestion](./images/file-ingestion.png)
+
 ## 📁 Documentation Structure
 
 ### 🔄 1. Enrichment (Data Enrichment)
+
+![Data Enrichment](./images/data-enrichment.png)
 
 Documentation of data enrichment flow between system and client:
 
@@ -28,6 +32,8 @@ Documentation of data enrichment flow between system and client:
 | [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.md) | 🏪 **Merchant Data**<br/>📤 `MerchantEvent`: Sent to client<br/>📥 `MerchantResponse`: Received via API | **Event** → Client<br/>**Response** ← Client |
 
 ### 📢 2. Notifications (System Notifications)
+
+![System Notifications](./images/system-notifications.png)
 
 Documentation of status and lifecycle notifications for chargebacks:
 
@@ -127,6 +133,6 @@ For questions or suggestions about this documentation, contact the development t
 
 **📄 Documentation maintained by Tupi Fintech team**
 
-*Last update: August 2025*
+*Last update: September 2025*
 
 </div>
