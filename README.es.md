@@ -123,6 +123,25 @@ type BaseResponse = {
 - **`acquirerReferenceNumber`**: Número de referencia del adquirente
 - **`helpdeskCaseIdentifier`**: Identificador del caso de helpdesk
 
+## ⚙️ Requisitos Mínimos
+
+Para ejecutar el sistema de contracargo, asegúrese de que su ambiente cumpla con los siguientes requisitos mínimos:
+
+### 🖥️ Requisitos de Hardware
+- **CPU**: 1 vCPU mínimo
+- **RAM**: 512MB mínimo
+- **Almacenamiento**: Almacenamiento de objetos compatible con S3 (tamaño depende del volumen del cliente)
+
+### ☸️ Requisitos de Kubernetes
+- **Pods**: 2 pods mínimo para alta disponibilidad
+- **Versión de Kubernetes**: 1.20+ recomendado
+- **Red**: Controlador de ingress configurado para acceso externo
+
+### 🔒 Requisitos de Seguridad
+- **TLS**: Certificados SSL/TLS para endpoints HTTPS
+- **Autenticación**: Keycloak como solución de gestión de identidad y acceso
+  - Consulte los [requisitos de Keycloak](https://www.keycloak.org/high-availability/concepts-memory-and-cpu-sizing)
+
 ## 📞 Soporte
 
 Para preguntas o sugerencias sobre esta documentación, contacte al equipo de desarrollo.

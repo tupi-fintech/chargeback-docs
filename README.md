@@ -123,6 +123,25 @@ type BaseResponse = {
 - **`acquirerReferenceNumber`**: Acquirer reference number
 - **`helpdeskCaseIdentifier`**: Helpdesk case identifier
 
+## ⚙️ Minimum Requirements
+
+To run the chargeback system, ensure your environment meets the following minimum requirements:
+
+### 🖥️ Hardware Requirements
+- **CPU**: 1 vCPU minimum
+- **RAM**: 512MB minimum
+- **Storage**: S3-compatible object storage (size depends on client volume)
+
+### ☸️ Kubernetes Requirements
+- **Pods**: 2 pods minimum for high availability
+- **Kubernetes Version**: 1.20+ recommended
+- **Network**: Ingress controller configured for external access
+
+### 🔒 Security Requirements
+- **TLS**: SSL/TLS certificates for HTTPS endpoints
+- **Authentication**: Keycloak as identity and access management solution
+  - See [Keycloak requirements](https://www.keycloak.org/high-availability/concepts-memory-and-cpu-sizing)
+
 ## 📞 Support
 
 For questions or suggestions about this documentation, contact the development team.

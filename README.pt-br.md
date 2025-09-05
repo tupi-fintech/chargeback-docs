@@ -123,6 +123,25 @@ type BaseResponse = {
 - **`acquirerReferenceNumber`**: Número de referência da adquirente
 - **`helpdeskCaseIdentifier`**: Identificador do caso no helpdesk
 
+## ⚙️ Requisitos Mínimos
+
+Para executar o sistema de chargeback, certifique-se de que seu ambiente atenda aos seguintes requisitos mínimos:
+
+### 🖥️ Requisitos de Hardware
+- **CPU**: 1 vCPU mínimo
+- **RAM**: 512MB mínimo
+- **Armazenamento**: Armazenamento de objetos compatível com S3 (tamanho depende do volume do cliente)
+
+### ☸️ Requisitos do Kubernetes
+- **Pods**: 2 pods mínimo para alta disponibilidade
+- **Versão do Kubernetes**: 1.20+ recomendado
+- **Rede**: Controlador de ingress configurado para acesso externo
+
+### 🔒 Requisitos de Segurança
+- **TLS**: Certificados SSL/TLS para endpoints HTTPS
+- **Autenticação**: Keycloak como solução de gerenciamento de identidade e acesso
+  - Consulte os [requisitos do Keycloak](https://www.keycloak.org/high-availability/concepts-memory-and-cpu-sizing)
+
 ## 📞 Suporte
 
 Para dúvidas ou sugestões sobre esta documentação, entre em contato com a equipe de desenvolvimento.
