@@ -132,6 +132,9 @@ Para ejecutar el sistema de contracargo, asegúrese de que su ambiente cumpla co
 - **RAM**: 512MB mínimo
 - **Almacenamiento**: Almacenamiento de objetos compatible con S3 (tamaño depende del volumen del cliente)
 
+### 🗄️ Requisitos de Base de Datos
+- **PostgreSQL**: Base de datos PostgreSQL compatible (versión 12+ recomendada)
+
 ### ☸️ Requisitos de Kubernetes
 - **Pods**: 2 pods mínimo para alta disponibilidad
 - **Versión de Kubernetes**: 1.20+ recomendado

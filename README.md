@@ -132,6 +132,9 @@ To run the chargeback system, ensure your environment meets the following minimu
 - **RAM**: 512MB minimum
 - **Storage**: S3-compatible object storage (size depends on client volume)
 
+### 🗄️ Database Requirements
+- **PostgreSQL**: Compatible PostgreSQL database (version 12+ recommended)
+
 ### ☸️ Kubernetes Requirements
 - **Pods**: 2 pods minimum for high availability
 - **Kubernetes Version**: 1.20+ recommended
