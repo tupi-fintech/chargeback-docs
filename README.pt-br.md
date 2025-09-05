@@ -133,7 +133,7 @@ Para executar o sistema de chargeback, certifique-se de que seu ambiente atenda 
 - **Armazenamento**: Armazenamento de objetos compatível com S3 (tamanho depende do volume do cliente)
 
 ### 🗄️ Requisitos de Banco de Dados
-- **PostgreSQL**: Banco de dados PostgreSQL compatível (versão 12+ recomendada)
+- **PostgreSQL**: Banco de dados PostgreSQL compatível (versão 17+ recomendada)
 
 ### ☸️ Requisitos do Kubernetes
 - **Pods**: 2 pods mínimo para alta disponibilidade

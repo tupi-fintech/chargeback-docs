@@ -133,7 +133,7 @@ To run the chargeback system, ensure your environment meets the following minimu
 - **Storage**: S3-compatible object storage (size depends on client volume)
 
 ### 🗄️ Database Requirements
-- **PostgreSQL**: Compatible PostgreSQL database (version 12+ recommended)
+- **PostgreSQL**: Compatible PostgreSQL database (version 17+ recommended)
 
 ### ☸️ Kubernetes Requirements
 - **Pods**: 2 pods minimum for high availability
