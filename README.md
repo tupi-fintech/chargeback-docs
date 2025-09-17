@@ -140,6 +140,11 @@ To run the chargeback system, ensure your environment meets the following minimu
 - **Kubernetes Version**: 1.20+ recommended
 - **Network**: Ingress controller configured for external access
 
+### 📊 Reports and BI Requirements
+- **Metabase**: Business Intelligence platform for creating charts and dashboards
+  - Required for data visualization and reporting
+  - See [Metabase requirements](https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase)
+
 ### 🔒 Security Requirements
 - **TLS**: SSL/TLS certificates for HTTPS endpoints
 - **Authentication**: Keycloak as identity and access management solution

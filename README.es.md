@@ -140,6 +140,11 @@ Para ejecutar el sistema de contracargo, asegúrese de que su ambiente cumpla co
 - **Versión de Kubernetes**: 1.20+ recomendado
 - **Red**: Controlador de ingress configurado para acceso externo
 
+### 📊 Requisitos de Reportes e BI
+- **Metabase**: Plataforma de Business Intelligence para crear gráficos y dashboards
+  - Requerido para visualización de datos y reportes
+  - Consulte los [requisitos de Metabase](https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase)
+
 ### 🔒 Requisitos de Seguridad
 - **TLS**: Certificados SSL/TLS para endpoints HTTPS
 - **Autenticación**: Keycloak como solución de gestión de identidad y acceso

@@ -140,6 +140,11 @@ Para executar o sistema de chargeback, certifique-se de que seu ambiente atenda 
 - **Versão do Kubernetes**: 1.20+ recomendado
 - **Rede**: Controlador de ingress configurado para acesso externo
 
+### 📊 Requisitos de Relatórios e BI
+- **Metabase**: Plataforma de Business Intelligence para criação de gráficos e dashboards
+  - Necessário para visualização de dados e relatórios
+  - Consulte os [requisitos do Metabase](https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase)
+
 ### 🔒 Requisitos de Segurança
 - **TLS**: Certificados SSL/TLS para endpoints HTTPS
 - **Autenticação**: Keycloak como solução de gerenciamento de identidade e acesso
