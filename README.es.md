@@ -24,6 +24,8 @@ Este repositorio contiene la documentación técnica completa del sistema de con
 
 ![Data Enrichment](./images/data-enrichment.png)
 
+> **Nota:** El área destacada representa componentes que deben ser desarrollados por el cliente. Esto incluye implementar la lógica para obtener los datos internos y enviar las respuestas a nuestro sistema durante el flujo de enriquecimiento.
+
 Documentación del flujo de enriquecimiento de datos entre sistema y cliente:
 
 | Archivo | Descripción | Flujo de Datos |

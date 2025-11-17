@@ -24,6 +24,8 @@ This repository contains the complete technical documentation of the chargeback 
 
 ![Data Enrichment](./images/data-enrichment.png)
 
+> **Note:** The highlighted area represents components that must be developed by the client. This includes implementing the logic to retrieve internal data and sending the responses to our system during the enrichment flow.
+
 Documentation of data enrichment flow between system and client:
 
 | File | Description | Data Flow |
