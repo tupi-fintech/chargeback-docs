@@ -24,6 +24,8 @@ Este repositório contém a documentação técnica completa do sistema de charg
 
 ![Data Enrichment](./images/data-enrichment.png)
 
+> **Nota:** A área destacada representa componentes que devem ser desenvolvidos pelo cliente. Isso inclui a implementação da lógica de consulta aos dados internos e o envio das respostas para o nosso sistema durante o fluxo de enriquecimento.
+
 Documentação do fluxo de enriquecimento de dados entre sistema e cliente:
 
 | Arquivo | Descrição | Fluxo de Dados |
