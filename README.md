@@ -46,26 +46,13 @@ Documentation of status and lifecycle notifications for chargebacks:
 
 ### 🤖 3. AI (Artificial Intelligence)
 
+![AI Recommendation](./images/ai-recommendation.png)
+
 Documentation of AI agent integration for chargeback recommendations:
 
 | File | Description | Data Type |
 |------|-------------|-----------|
 | [`5.AI.md`](./3.AI/5.AI.md) | 🧠 **AI Agent Data** - Input data sent to the chargeback recommendation AI agent | Input API |
-
-## 🚀 How to Use This Documentation
-
-1. **For Developers**: 
-   - Consult **Events** files to implement notification reception
-   - Consult **Responses** files to implement data return APIs
-   - Use specified formats to ensure correct integration
-
-2. **For Analysts**: 
-   - Use documentation to understand bidirectional data flows
-   - Understand when the system requests data (Events) vs when it receives data (Responses)
-
-3. **For Support**: 
-   - Use as reference for integration troubleshooting
-   - Identify if issues are in Event sending or Response receiving
 
 ## 📋 Available Communication Types
 
