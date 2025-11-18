@@ -46,6 +46,8 @@ Documentação das notificações de status e ciclo de vida dos chargebacks:
 
 ### 🤖 3. AI (Inteligência Artificial)
 
+![AI Recommendation](./images/ai-recommendation.png)
+
 Documentação da integração com agente de IA para recomendações de chargeback:
 
 | Arquivo | Descrição | Tipo de Dados |

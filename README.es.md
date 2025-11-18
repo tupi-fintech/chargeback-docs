@@ -46,6 +46,8 @@ Documentación de las notificaciones de estado y ciclo de vida de los contracarg
 
 ### 🤖 3. AI (Inteligencia Artificial)
 
+![AI Recommendation](./images/ai-recommendation.png)
+
 Documentación de la integración con agente de IA para recomendaciones de contracargo:
 
 | Archivo | Descripción | Tipo de Datos |

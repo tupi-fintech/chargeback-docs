@@ -46,6 +46,8 @@ Documentation of status and lifecycle notifications for chargebacks:
 
 ### 🤖 3. AI (Artificial Intelligence)
 
+![AI Recommendation](./images/ai-recommendation.png)
+
 Documentation of AI agent integration for chargeback recommendations:
 
 | File | Description | Data Type |
