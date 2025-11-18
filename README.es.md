@@ -44,6 +44,14 @@ Documentación de las notificaciones de estado y ciclo de vida de los contracarg
 | [`3.STATUS.md`](./2.Notifications/3.STATUS.md) | 📊 **Notificaciones de Estado** - Actualizaciones de estado del proceso de contracargo | `status` |
 | [`4.CYCLE.md`](./2.Notifications/4.CYCLE.md) | 🔄 **Notificaciones de Ciclo** - Cambios de ciclo (contracargo, pre-arbitraje, arbitraje) | `cycle` |
 
+### 🤖 3. AI (Inteligencia Artificial)
+
+Documentación de la integración con agente de IA para recomendaciones de contracargo:
+
+| Archivo | Descripción | Tipo de Datos |
+|---------|-------------|---------------|
+| [`5.AI.md`](./3.AI/5.AI.md) | 🧠 **Datos del Agente de IA** - Datos de entrada enviados al agente de IA de recomendación de contracargo | API de Entrada |
+
 ## 🚀 Cómo Usar Esta Documentación
 
 1. **Para Desarrolladores**: 
@@ -162,6 +170,6 @@ Para preguntas o sugerencias sobre esta documentación, contacte al equipo de de
 
 **📄 Documentación mantenida por el equipo Tupi Fintech**
 
-*Última actualización: Septiembre 2025*
+*Última actualización: Noviembre 2025*
 
 </div>

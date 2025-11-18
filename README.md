@@ -44,6 +44,14 @@ Documentation of status and lifecycle notifications for chargebacks:
 | [`3.STATUS.md`](./2.Notifications/3.STATUS.md) | 📊 **Status Notifications** - Chargeback process status updates | `status` |
 | [`4.CYCLE.md`](./2.Notifications/4.CYCLE.md) | 🔄 **Cycle Notifications** - Cycle changes (chargeback, pre-arbitration, arbitration) | `cycle` |
 
+### 🤖 3. AI (Artificial Intelligence)
+
+Documentation of AI agent integration for chargeback recommendations:
+
+| File | Description | Data Type |
+|------|-------------|-----------|
+| [`5.AI.md`](./3.AI/5.AI.md) | 🧠 **AI Agent Data** - Input data sent to the chargeback recommendation AI agent | Input API |
+
 ## 🚀 How to Use This Documentation
 
 1. **For Developers**: 
@@ -162,6 +170,6 @@ For questions or suggestions about this documentation, contact the development t
 
 **📄 Documentation maintained by Tupi Fintech team**
 
-*Last update: September 2025*
+*Last update: November 2025*
 
 </div>
