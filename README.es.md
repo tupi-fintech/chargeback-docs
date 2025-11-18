@@ -54,21 +54,6 @@ Documentación de la integración con agente de IA para recomendaciones de contr
 |---------|-------------|---------------|
 | [`5.AI.md`](./3.AI/5.AI.md) | 🧠 **Datos del Agente de IA** - Datos de entrada enviados al agente de IA de recomendación de contracargo | API de Entrada |
 
-## 🚀 Cómo Usar Esta Documentación
-
-1. **Para Desarrolladores**: 
-   - Consulte los archivos de **Events** para implementar recepción de notificaciones
-   - Consulte los archivos de **Responses** para implementar APIs de retorno de datos
-   - Use los formatos especificados para garantizar una integración correcta
-
-2. **Para Analistas**: 
-   - Use la documentación para comprender los flujos bidireccionales de datos
-   - Entienda cuándo el sistema solicita datos (Events) vs cuándo recibe datos (Responses)
-
-3. **Para Soporte**: 
-   - Utilice como referencia para resolución de problemas de integraciones
-   - Identifique si los problemas están en el envío de Events o recepción de Responses
-
 ## 📋 Tipos de Comunicación Disponibles
 
 ### 🔄 Enriquecimiento de Datos (Events ↔ Responses)

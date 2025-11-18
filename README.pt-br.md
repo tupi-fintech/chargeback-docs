@@ -54,21 +54,6 @@ Documentação da integração com agente de IA para recomendações de chargeba
 |---------|-----------|---------------|
 | [`5.AI.md`](./3.AI/5.AI.md) | 🧠 **Dados do Agente de IA** - Dados de entrada enviados para o agente de IA de recomendação de chargeback | API de Entrada |
 
-## 🚀 Como Usar Esta Documentação
-
-1. **Para Desenvolvedores**: 
-   - Consulte os arquivos de **Events** para implementar recebimento de notificações
-   - Consulte os arquivos de **Responses** para implementar APIs de retorno de dados
-   - Use os formatos especificados para garantir integração correta
-
-2. **Para Analistas**: 
-   - Use a documentação para compreender os fluxos bidirecionais de dados
-   - Entenda quando o sistema solicita dados (Events) vs quando recebe dados (Responses)
-
-3. **Para Suporte**: 
-   - Utilize como referência para troubleshooting de integrações
-   - Identifique se problemas estão no envio de Events ou recebimento de Responses
-
 ## 📋 Tipos de Comunicação Disponíveis
 
 ### 🔄 Enriquecimento de Dados (Events ↔ Responses)
