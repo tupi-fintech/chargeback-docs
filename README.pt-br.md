@@ -30,8 +30,8 @@ Documentação do fluxo de enriquecimento de dados entre sistema e cliente:
 
 | Arquivo | Descrição | Fluxo de Dados |
 |---------|-----------|----------------|
-| [`1.TRANSACTION.md`](./1.Enrichment/1.TRANSACTION.md) | 💳 **Dados de Transação**<br/>📤 `TransactionEvent`: Enviado para o cliente<br/>📥 `TransactionResponse`: Recebido via API | **Event** → Cliente<br/>**Response** ← Cliente |
-| [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.md) | 🏪 **Dados do Estabelecimento Comercial**<br/>📤 `MerchantEvent`: Enviado para o cliente<br/>📥 `MerchantResponse`: Recebido via API | **Event** → Cliente<br/>**Response** ← Cliente |
+| [`1.TRANSACTION.md`](./1.Enrichment/1.TRANSACTION.pt-br.md) | 💳 **Dados de Transação**<br/>📤 `TransactionEvent`: Enviado para o cliente<br/>📥 `TransactionResponse`: Recebido via API | **Event** → Cliente<br/>**Response** ← Cliente |
+| [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.pt-br.md) | 🏪 **Dados do Estabelecimento Comercial**<br/>📤 `MerchantEvent`: Enviado para o cliente<br/>📥 `MerchantResponse`: Recebido via API | **Event** → Cliente<br/>**Response** ← Cliente |
 
 ### 📢 2. Notifications (Notificações de Sistema)
 
@@ -41,8 +41,8 @@ Documentação das notificações de status e ciclo de vida dos chargebacks:
 
 | Arquivo | Descrição | Tipo de Evento |
 |---------|-----------|----------------|
-| [`3.STATUS.md`](./2.Notifications/3.STATUS.md) | 📊 **Notificações de Status** - Atualizações de status do processo de chargeback | `status` |
-| [`4.CYCLE.md`](./2.Notifications/4.CYCLE.md) | 🔄 **Notificações de Ciclo** - Mudanças de ciclo (chargeback, pré-arbitragem, arbitragem) | `cycle` |
+| [`3.STATUS.md`](./2.Notifications/3.STATUS.pt-br.md) | 📊 **Notificações de Status** - Atualizações de status do processo de chargeback | `status` |
+| [`4.CYCLE.md`](./2.Notifications/4.CYCLE.pt-br.md) | 🔄 **Notificações de Ciclo** - Mudanças de ciclo (chargeback, pré-arbitragem, arbitragem) | `cycle` |
 
 ### 🤖 3. AI (Inteligência Artificial)
 
@@ -52,7 +52,7 @@ Documentação da integração com agente de IA para recomendações de chargeba
 
 | Arquivo | Descrição | Tipo de Dados |
 |---------|-----------|---------------|
-| [`5.AI.md`](./3.AI/5.AI.md) | 🧠 **Dados do Agente de IA** - Dados de entrada enviados para o agente de IA de recomendação de chargeback | API de Entrada |
+| [`5.AI.md`](./3.AI/5.AI.pt-br.md) | 🧠 **Dados do Agente de IA** - Dados de entrada enviados para o agente de IA de recomendação de chargeback | API de Entrada |
 
 ## 📋 Tipos de Comunicação Disponíveis
 
@@ -60,15 +60,15 @@ Documentação da integração com agente de IA para recomendações de chargeba
 
 | Tipo | Enviamos (Event) | Recebemos (Response) | Documentação |
 |------|------------------|---------------------|--------------|
-| `transaction` | Solicita dados de transação | Dados completos da transação | [TRANSACTION.md](./1.Enrichment/1.TRANSACTION.md) |
-| `merchant` | Solicita dados do EC | Dados completos do estabelecimento | [MERCHANT.md](./1.Enrichment/2.MERCHANT.md) |
+| `transaction` | Solicita dados de transação | Dados completos da transação | [TRANSACTION.md](./1.Enrichment/1.TRANSACTION.pt-br.md) |
+| `merchant` | Solicita dados do EC | Dados completos do estabelecimento | [MERCHANT.md](./1.Enrichment/2.MERCHANT.pt-br.md) |
 
 ### 📢 Notificações Unidirecionais (Events)
 
 | Tipo | Enviamos (Event) | Propósito | Documentação |
 |------|------------------|-----------|--------------|
-| `status` | Atualização de status | Informar mudanças de status | [STATUS.md](./2.Notifications/3.STATUS.md) |
-| `cycle` | Mudança de ciclo | Informar alterações de ciclo | [CYCLE.md](./2.Notifications/4.CYCLE.md) |
+| `status` | Atualização de status | Informar mudanças de status | [STATUS.md](./2.Notifications/3.STATUS.pt-br.md) |
+| `cycle` | Mudança de ciclo | Informar alterações de ciclo | [CYCLE.md](./2.Notifications/4.CYCLE.pt-br.md) |
 
 ## 🔧 Integração
 
@@ -157,6 +157,6 @@ Para dúvidas ou sugestões sobre esta documentação, entre em contato com a eq
 
 **📄 Documentação mantida pela equipe Tupi Fintech**
 
-*Última atualização: Novembro 2025*
+*Última atualização: Fevereiro 2026*
 
 </div>
