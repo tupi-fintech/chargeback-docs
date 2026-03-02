@@ -30,8 +30,8 @@ Documentación del flujo de enriquecimiento de datos entre sistema y cliente:
 
 | Archivo | Descripción | Flujo de Datos |
 |---------|-------------|----------------|
-| [`1.TRANSACTION.md`](./1.Enrichment/1.TRANSACTION.md) | 💳 **Datos de Transacción**<br/>📤 `TransactionEvent`: Enviado al cliente<br/>📥 `TransactionResponse`: Recibido vía API | **Event** → Cliente<br/>**Response** ← Cliente |
-| [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.md) | 🏪 **Datos del Comercio**<br/>📤 `MerchantEvent`: Enviado al cliente<br/>📥 `MerchantResponse`: Recibido vía API | **Event** → Cliente<br/>**Response** ← Cliente |
+| [`1.TRANSACTION.md`](./1.Enrichment/1.TRANSACTION.es.md) | 💳 **Datos de Transacción**<br/>📤 `TransactionEvent`: Enviado al cliente<br/>📥 `TransactionResponse`: Recibido vía API | **Event** → Cliente<br/>**Response** ← Cliente |
+| [`2.MERCHANT.md`](./1.Enrichment/2.MERCHANT.es.md) | 🏪 **Datos del Comercio**<br/>📤 `MerchantEvent`: Enviado al cliente<br/>📥 `MerchantResponse`: Recibido vía API | **Event** → Cliente<br/>**Response** ← Cliente |
 
 ### 📢 2. Notifications (Notificaciones del Sistema)
 
@@ -41,8 +41,8 @@ Documentación de las notificaciones de estado y ciclo de vida de los contracarg
 
 | Archivo | Descripción | Tipo de Evento |
 |---------|-------------|----------------|
-| [`3.STATUS.md`](./2.Notifications/3.STATUS.md) | 📊 **Notificaciones de Estado** - Actualizaciones de estado del proceso de contracargo | `status` |
-| [`4.CYCLE.md`](./2.Notifications/4.CYCLE.md) | 🔄 **Notificaciones de Ciclo** - Cambios de ciclo (contracargo, pre-arbitraje, arbitraje) | `cycle` |
+| [`3.STATUS.md`](./2.Notifications/3.STATUS.es.md) | 📊 **Notificaciones de Estado** - Actualizaciones de estado del proceso de contracargo | `status` |
+| [`4.CYCLE.md`](./2.Notifications/4.CYCLE.es.md) | 🔄 **Notificaciones de Ciclo** - Cambios de ciclo (contracargo, pre-arbitraje, arbitraje) | `cycle` |
 
 ### 🤖 3. AI (Inteligencia Artificial)
 
@@ -60,15 +60,15 @@ Documentación de la integración con agente de IA para recomendaciones de contr
 
 | Tipo | Enviamos (Event) | Recibimos (Response) | Documentación |
 |------|------------------|---------------------|---------------|
-| `transaction` | Solicita datos de transacción | Datos completos de transacción | [TRANSACTION.md](./1.Enrichment/1.TRANSACTION.md) |
-| `merchant` | Solicita datos del comercio | Datos completos del comercio | [MERCHANT.md](./1.Enrichment/2.MERCHANT.md) |
+| `transaction` | Solicita datos de transacción | Datos completos de transacción | [TRANSACTION.md](./1.Enrichment/1.TRANSACTION.es.md) |
+| `merchant` | Solicita datos del comercio | Datos completos del comercio | [MERCHANT.md](./1.Enrichment/2.MERCHANT.es.md) |
 
 ### 📢 Notificaciones Unidireccionales (Events)
 
 | Tipo | Enviamos (Event) | Propósito | Documentación |
 |------|------------------|-----------|---------------|
-| `status` | Actualización de estado | Informar cambios de estado | [STATUS.md](./2.Notifications/3.STATUS.md) |
-| `cycle` | Cambio de ciclo | Informar alteraciones de ciclo | [CYCLE.md](./2.Notifications/4.CYCLE.md) |
+| `status` | Actualización de estado | Informar cambios de estado | [STATUS.md](./2.Notifications/3.STATUS.es.md) |
+| `cycle` | Cambio de ciclo | Informar alteraciones de ciclo | [CYCLE.md](./2.Notifications/4.CYCLE.es.md) |
 
 ## 🔧 Integración
 
@@ -157,6 +157,6 @@ Para preguntas o sugerencias sobre esta documentación, contacte al equipo de de
 
 **📄 Documentación mantenida por el equipo Tupi Fintech**
 
-*Última actualización: Noviembre 2025*
+*Última actualización: Febrero 2026*
 
 </div>
