@@ -157,6 +157,6 @@ Para preguntas o sugerencias sobre esta documentación, contacte al equipo de de
 
 **📄 Documentación mantenida por el equipo Tupi Fintech**
 
-*Última actualización: Febrero 2026*
+*Última actualización: Abril 2026*
 
 </div>

@@ -157,6 +157,6 @@ For questions or suggestions about this documentation, contact the development t
 
 **📄 Documentation maintained by Tupi Fintech team**
 
-*Last update: February 2026*
+*Last update: April 2026*
 
 </div>
