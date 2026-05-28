@@ -88,6 +88,27 @@ Datos completos que **recibimos del cliente** vía API para actualizar nuestro s
 - Son enviados por el cliente a través de llamadas API
 - Actualizan la información en nuestro sistema
 
+### 🌐 Endpoint Único de Webhook
+
+Utilizamos un único endpoint de webhook para todos los eventos de la plataforma (`transaction`, `merchant`, `status` y `cycle`).
+
+El tipo de evento se identifica por el campo `event` en el payload.
+
+### 🔒 Seguridad de la Comunicación (Global)
+
+Como capa de seguridad para eventos y respuestas, adoptamos:
+
+- IP whitelisting (solo IPs autorizadas pueden enviar/recibir llamadas);
+- Firma HMAC SHA-256 en el header `x-webhook-signature`.
+
+Headers esperados (ejemplo):
+
+```http
+content-type: application/json
+user-agent: Chargeback-API-Webhook/1.0
+x-webhook-signature: sha256=<firma_hmac_hex>
+```
+
 ### Estructura Base de los Eventos
 
 Todos los eventos enviados siguen una estructura base común:
