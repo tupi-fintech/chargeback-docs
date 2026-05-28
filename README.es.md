@@ -90,7 +90,7 @@ Datos completos que **recibimos del cliente** vía API para actualizar nuestro s
 
 ### 🌐 Endpoint Único de Webhook
 
-Utilizamos un único endpoint de webhook para todos los eventos de la plataforma (`transaction`, `merchant`, `status` y `cycle`).
+Utilizamos un único endpoint de webhook para todos los eventos de la plataforma (`transaction`, `merchant`, `status`, `cycle`, `settlement`, `voucher`).
 
 El tipo de evento se identifica por el campo `event` en el payload.
 
